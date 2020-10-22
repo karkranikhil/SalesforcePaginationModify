@@ -3,9 +3,7 @@ import { LightningElement , api} from 'lwc';
 export default class PaginationModifiedChild extends LightningElement {
 @api recToDisplay;
 @api pageSize;
-
-@api curr;
-currentPage =this.curr;
+@api currentPage;
 @api totalPage;
 
 get getObjList(){
