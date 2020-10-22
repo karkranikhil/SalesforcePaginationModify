@@ -1,0 +1,17 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item>
+            <lightning-button icon-name="utility:left" onclick={gofHandler}>
+            </lightning-button>
+            <lightning-button icon-name="utility:chevronleft" disabled={checkPrev} onclick={previousHandler}>
+            </lightning-button>
+        </lightning-layout-item>
+       
+        <lightning-layout-item flexibility="grow"> Displaying {currentPage} of {totalPage} page.</lightning-layout-item>
+        <lightning-layout-item>
+            <lightning-button icon-name="utility:chevronright" disabled={checkNext} icon-position="right" onclick={nextHandler}>
+            </lightning-button>
+            <lightning-button icon-name="utility:right" onclick={golHandler}></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

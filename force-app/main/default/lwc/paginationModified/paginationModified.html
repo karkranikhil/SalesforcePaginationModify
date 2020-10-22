@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Paginator">
+        <c-pagination-header ongetsize={handlepagesize}></c-pagination-header>
+       
+         <template for:each={recFromChild} for:item="opp">
+           <li key={opp.Id}>
+                {opp.Name}
+           </li>
+        </template>
+
+		<p slot="footer">
+            <c-pagination-modified-child get-obj-list={oppList} page-size={pgSize} onsendlist = {sendListHandler} total-page={tp} curr={cp}></c-pagination-modified-child>
+        </p>
+	</lightning-card>
+    
+</template>
