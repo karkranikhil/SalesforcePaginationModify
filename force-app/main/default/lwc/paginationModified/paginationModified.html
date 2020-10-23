@@ -9,7 +9,10 @@
         </template>
 
 		<p slot="footer">
-            <c-pagination-modified-child get-obj-list={oppList} page-size={pgSize} onsendlist = {sendListHandler} total-page={tp} current-page={cp}></c-pagination-modified-child>
+            <c-pagination-modified-child
+            get-obj-list={oppList}
+            page-size={pgSize}
+            onsendlist={sendListHandler}></c-pagination-modified-child>
         </p>
 	</lightning-card>
     

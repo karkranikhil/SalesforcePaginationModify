@@ -11,8 +11,7 @@ export default class PaginationHeader extends LightningElement {
         return opt;       
     }
     handleChange(event){
-        this.size = event.detail.value;
-        this.size = parseInt(this.size);
+        this.size = parseInt(event.detail.value);
         this.dispatchEvent(new CustomEvent('getsize',{detail:this.size}));
     }
 }
